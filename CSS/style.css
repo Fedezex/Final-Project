@@ -1,11 +1,12 @@
 
 /* index */
-header{
+header .navbar {
     border: rgb(255, 255, 255);
     border-style: groove;
     background-image: url('../imagenes/fondo-hexagonal-oscuro_1048-10861.jpg');
     box-shadow: 0px 10px 5px 0px #1b1102;
     border: 2px solid rgba(0, 0, 0, 0.582);
+    background-color: transparent !important;
 }
 
 .title-container{
@@ -84,6 +85,7 @@ h5{
 
 .boton{
     width: 150px; height: 48px;
+    visibility: hidden;
 }
 
 .logotipo{   
