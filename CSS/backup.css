@@ -1,0 +1,267 @@
+
+/* index */
+header .navbar {
+    border: rgb(255, 255, 255);
+    border-style: groove;
+    background-image: url('../imagenes/fondo-hexagonal-oscuro_1048-10861.jpg');
+    box-shadow: 0px 10px 5px 0px #1b1102;
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    background-color: transparent !important;
+}
+
+.title-container{
+    width: 50%;
+    height: 50%;
+}
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.texto-titulo{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.productos:hover{
+    transform: scale(1.25);
+    transition:all 1s ease;
+}
+
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    display: inline;
+}
+
+.lista-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body{
+    background: linear-gradient(orange, coral);
+    background-image: url("../imagenes/Fondo.png");
+    background-size: cover;
+}
+
+  
+.img2{
+    width: 50px; height: 50px;
+    -webkit-transition: -webkit-transform 1s;
+}
+
+.img2:hover{
+    -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+h5{
+    text-decoration: none;
+}
+
+.paginas{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-decoration: none; 
+    color: cyan;
+}
+
+.firma{
+    text-align: right;
+    font-size: 15px;
+    padding: 0px 20px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.boton{
+    width: 150px; height: 48px;
+    visibility: hidden;
+}
+
+.logotipo{   
+    width: 250px;
+    height: 125px;
+}
+
+.seccion{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    margin: 2%;
+}
+
+.social-fixed{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 50px; height: 50px;
+    
+}
+
+.social-text{
+    padding: 0 0 0 1%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+.social{
+    padding: 1%;
+    display: inline;
+
+}
+
+.grid-container{
+    display: grid;
+    padding: 0.5%;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+    gap: 10px;
+}
+
+.productos{
+    padding: 0.5%;
+}
+
+.productos-1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+/* Contacto */
+.contact-grid-container{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 2%;
+}
+
+.cajones{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: white;
+    border: 2px solid white;
+    padding: 1%;
+}
+
+.cajones-2{
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+     
+}
+
+/* Servicios */
+.service-grid-container{
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: repeat(2, 40%);
+    gap: 10px;
+    padding: 2%;
+    justify-content: center;
+    
+}
+
+.cajones-s{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: white;
+    border: 2px solid white;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+
+/* Portfolio */
+
+.carousel-text{
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-item{
+    padding: 10%;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+    .seccion{
+        display:block;
+        justify-content: center;
+    }
+    
+    li{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        text-decoration: none;
+        display: inline;
+        width: 60%;
+        height: auto;
+    }
+
+    .logotipo{   
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .boton{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+    
+    
+    .grid-container {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: auto;
+    
+    }
+
+    .titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight:bold;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+/* Contactos - Mobile */
+    
+    .cajones-2{
+        display: none;
+    }
+    .cajones{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        color: white;
+        border: 2px solid white;
+        padding: 5%;
+    }
+
+    .contact-grid-container{
+        display: grid;
+        grid-template-rows: 50%;
+        grid-template-columns: auto;
+        padding: 2%;
+    }
+}

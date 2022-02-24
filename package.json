@@ -1,0 +1,25 @@
+{
+  "name": "desafio-1",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Fede</h1>\r <h3 align=\"center\">A passionate Frontend Developer and UX/UI Designer from Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fedezex/Final-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fedezex/Final-Project/issues"
+  },
+  "homepage": "https://github.com/Fedezex/Final-Project#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
