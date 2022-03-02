@@ -67,13 +67,6 @@ body {
   visibility: hidden;
 }
 
-.seccion {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2%;
-  margin: 2%;
-}
-
 /* Contacto */
 .contact-grid-container {
   display: grid;

@@ -1,6 +1,6 @@
 @import 'components/footer';
 @import 'base/general-styles';
-
+@import 'base/maps.scss';
 
 .productos{
     padding: 0.5%;
@@ -14,13 +14,6 @@
 .boton{
     width: 150px; height: 48px;
     visibility: hidden;
-}
-
-.seccion{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2%;
-    margin: 2%;
 }
 
 
