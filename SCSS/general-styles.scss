@@ -1,0 +1,18 @@
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(orange, coral);
+    background-image: url("../imagenes/Fondo.png");
+    background-size: cover;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
