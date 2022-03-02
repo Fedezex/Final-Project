@@ -67,11 +67,6 @@ body {
   visibility: hidden;
 }
 
-.logotipo {
-  width: 250px;
-  height: 125px;
-}
-
 .seccion {
   display: flex;
   justify-content: space-between;

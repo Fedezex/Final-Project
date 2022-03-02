@@ -1,5 +1,5 @@
 @import 'components/footer';
-@import 'components/general-styles';
+@import 'base/general-styles';
 
 
 .productos{
@@ -14,11 +14,6 @@
 .boton{
     width: 150px; height: 48px;
     visibility: hidden;
-}
-
-.logotipo{   
-    width: 250px;
-    height: 125px;
 }
 
 .seccion{

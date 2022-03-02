@@ -1,9 +1,11 @@
 
+@import 'variables';
+
 .titulo{
-    font-family: 'Montserrat', sans-serif;
-    font-weight:bold;
-    font-size: 50px;
-    text-align: center;
+    font-family: $font-family;
+    font-weight:$font-weight;
+    font-size: $font-size;
+    text-align: $text-align;
 }
 
 body{
