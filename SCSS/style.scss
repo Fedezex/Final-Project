@@ -1,8 +1,3 @@
-.title-container{
-    width: 50%;
-    height: 50%;
-}
-
 .titulo{
     font-family: 'Montserrat', sans-serif;
     font-weight:bold;
@@ -10,19 +5,13 @@
     text-align: center;
 }
 
-.texto-titulo{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    text-align: center;
-    margin: auto;
-}
-
-.productos {
-	&:hover {
+.productos:hover {
 		transform: scale(1.25);
 		transition: all 1s ease;
 	}
-	padding: 0.5%;
+	
+.productos {
+    padding: 0.5%;
 }
 
 
@@ -31,12 +20,6 @@ li{
     font-style: normal;
     text-decoration: none;
     display: inline;
-}
-
-.lista-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 body{
