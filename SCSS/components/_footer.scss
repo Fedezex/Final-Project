@@ -10,7 +10,7 @@
 
 .social-text{
     padding: 0 0 0 1%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: map-get($footer, font-family);
     font-weight: bolder;
     color: white;
 }
@@ -24,7 +24,7 @@
     text-align: right;
     font-size: 15px;
     padding: 0px 20px 0px 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: map-get($footer, font-family);
 }
 
 .img2{
