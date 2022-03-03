@@ -1,0 +1,7 @@
+@mixin colores($color){
+    background: $color;
+}
+
+footer{
+   @include colores(linear-gradient(orange, coral));
+}

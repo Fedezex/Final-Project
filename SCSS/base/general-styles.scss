@@ -9,7 +9,6 @@
 }
 
 body{
-    background: linear-gradient(orange, coral);
     background-image: url("../imagenes/Fondo.png");
     background-size: cover;
 }
@@ -17,4 +16,9 @@ body{
 .img{
     width: 100%;
     height: auto;
+}
+
+footer{
+    background-image: url('/imagenes/fondo-hexagonal-oscuro_1048-10861.jpg');
+    background-size: cover;
 }
