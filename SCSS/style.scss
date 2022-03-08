@@ -15,15 +15,6 @@
 
 
 /* Servicios */
-.service-grid-container{
-    display: grid;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-columns: repeat(2, 40%);
-    gap: 10px;
-    padding: 2%;
-    justify-content: center;
-    
-}
 
 .cajones-s{
     font-family: 'Montserrat', sans-serif;
@@ -45,10 +36,3 @@
     padding: 10%;
 }
 
-
-/* Mobile */
-
-@media screen and (max-width: 480px) {
-
-
-}
