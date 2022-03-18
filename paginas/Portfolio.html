@@ -69,62 +69,48 @@
 
 
     <main>
+      <section class="home">
         <h1 class="titulo p-5 animate__animated animate__fadeIn">Portfolio</h1>
 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-controls">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" style="background-image: url('../assets/images/bs-images/carousel-slide-1.png');" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" style="background-image: url('../assets/images/bs-images/carousel-slide-2.png');"aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" style="background-image: url('../assets/images/bs-images/carousel-slide-3.png');" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src="../assets/images/bs-images/carousel-slide-1.png" class="d-block ms-auto me-auto w-50 rounded-3" alt="agendas">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="fw-bold carousel-text">Agendas A4</h5>
-                <p>Armado de agendas, terminación OPP Mate en carton grueso forrado.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="../assets/images/bs-images/carousel-slide-2.png" class="d-block ms-auto me-auto w-50 rounded-3" alt="preimpresion">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="fw-bold carousel-text">Pre Impresión</h5>
-                <p>Sistema de preimpresión Kodak. Maquetado de todo tipo de impresiones.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000" >
-              <img src="../assets/images/bs-images/carousel-slide-3.png" class="d-block ms-auto me-auto w-50 rounded-3" alt="binder">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="fw-bold carousel-text">Encuadernado Binder</h5>
-                <p>Preparado de libros y revistas. Encuadernado cosido y pegado.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="../assets/images/bs-images/carousel-slide-4.png" class="d-block ms-auto me-auto w-50 rounded-3" alt="folletos">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="fw-bold carousel-text">Impresión de folletos institucionales</h5>
-                <p>Tamaños pequeños y grandes.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="../assets/images/bs-images/carousel-slide-5.png" class="d-block ms-auto me-auto w-50 rounded-3" alt="cajas">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="fw-bold carousel-text">Impresión y armado de cajas</h5>
-                <p>Diferentes tipos de productos.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('../assets/images/bs-images/carousel-slide-1.png');">
+              <div class="container">
+                <h2>Im rose</h2>
+                <p>web developer</p>
+              </div>
+            </div>
+            <div class="carousel-item"  style="background-image: url('../assets/images/bs-images/carousel-slide-2.png');">
+              <div class="container">
+                <h2>Im mora</h2>
+                <p>web developer</p>
+              </div>
+            </div>
+            <div class="carousel-item"  style="background-image: url('../assets/images/bs-images/carousel-slide-3.png');">
+              <div class="container">
+                <h2>Im coca</h2>
+                <p>web developer</p>
+              </div>
+            </div>
+          </div>
+         
         </div>
+      </section>
     </main>
 
     <footer class="p-4">
