@@ -149,25 +149,30 @@ h1,h3,h4,h6, .px-4 {
     transform: scale(1.2);
 }
 
-.home .carousel-control-next, 
+.home .carousel-control-next,
 .home .carousel-control-prev {
     height: 60px;
-    width: 60px;
-    background-color: red;
+    width: 60px;    
     opacity: 1;
     z-index: 3;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
 .home .carousel-control-next {
     right: -90px;
-    
+}
 .home .carousel-control-prev {
     left: -90px;
+
 }
-}
+
+.home .carousel-control-next:hover,
+.home .carousel-control-prev:hover{
+    box-shadow: 0 0 10px #ffffff;
+} 
 
 
 
@@ -207,4 +212,18 @@ h1,h3,h4,h6, .px-4 {
         width: 80% !important;
     }
 
+    .home .carousel-item h2{ 
+        font-size: 50px;
+    }
+
+    .home .carousel-indicators button{
+        height: 50px;
+        width: 50px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        border: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
 } 
