@@ -227,3 +227,15 @@ h1,h3,h4,h6, .px-4 {
         transition: all 0.3s ease;
     }
 } 
+
+// Switch
+
+.switch {
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}

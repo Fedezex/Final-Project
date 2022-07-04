@@ -142,17 +142,40 @@ h1, h3, h4, h6, .px-4 {
 }
 
 .home .carousel-item.active h2 {
-  animation: fadeInLeft 0.5s ease forwards;
+  -webkit-animation: fadeInLeft 0.5s ease forwards;
+          animation: fadeInLeft 0.5s ease forwards;
 }
 
 .home .carousel-item.active p {
-  animation: fadeInRight 0.5s ease forwards;
+  -webkit-animation: fadeInRight 0.5s ease forwards;
+          animation: fadeInRight 0.5s ease forwards;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
     transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
   }
   100% {
     opacity: 1;
@@ -273,7 +296,12 @@ h1, h3, h4, h6, .px-4 {
     transition: all 0.3s ease;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
-
-
+.switch {
+  background: #343D5B;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}/*# sourceMappingURL=style.css.map */
