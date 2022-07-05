@@ -51,6 +51,13 @@ body {
   background-size: cover;
 }
 
+body.dark{
+  background: rgba(0, 0, 0, 0.5) url("../imagenes/Fondo.png");
+  background-size: cover;
+  background-blend-mode: darken;
+  transition: .4s ease all;
+}
+
 .img {
   width: 100%;
   height: auto;
@@ -296,12 +303,12 @@ h1, h3, h4, h6, .px-4 {
     color: #fff;
 }
 
-.swith:active{
+.switch.active{
   background: orange;
   color: #000;
 }
 
-.swith:active::after{
+.switch.active::after{
   right: 0;
   left: unset;
 }

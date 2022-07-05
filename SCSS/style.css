@@ -327,4 +327,7 @@ h1, h3, h4, h6, .px-4 {
   background: none;
   color: #fff;
 }
-/*# sourceMappingURL=style.css.map */
+
+body.dark {
+  background: #000;
+}/*# sourceMappingURL=style.css.map */
