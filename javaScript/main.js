@@ -32,3 +32,6 @@ window.onscroll = function(){
 }
 
 
+// API Fetch
+
+
