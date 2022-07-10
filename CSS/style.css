@@ -320,4 +320,29 @@ body.dark {
   transition: ease 2s all;
 }
 
+#button-up-up{
+  width: 60px;
+  height: 60px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+  transform: scale(0);
+
+}
+
+#button-up-up:hover{
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
 /*# sourceMappingURL=style.css.map */
