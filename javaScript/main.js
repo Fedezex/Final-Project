@@ -51,3 +51,19 @@ fetch(`${API_URL}/users`)
     
     HTMLResponse.appendChild(ul);
 });
+
+// Carrito de contratación de servicios
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData()
+}) 
+
+const fetchData = async () => {
+    try {
+        const res = await fetch("data.json")
+        const data = await res.json()
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
