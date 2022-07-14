@@ -3,7 +3,7 @@
       "precio": 200,
       "id": 1,
       "title": "Envíos",
-      "thumbnailUrl": "imagenes/envios.png"
+      "thumbnailUrl": "../imagenes/envios.png"
     },
     {
       "precio": 300,

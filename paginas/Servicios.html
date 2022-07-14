@@ -80,7 +80,7 @@
 
     <main class="d-flex row justify-content-center m-3 p-4">
         
-        <div class="container d-flex row justify-content-center ">
+        <!-- 
         <div class="card p-3 m-3" style="width: 36rem;">
           <img src="../imagenes/envios.png" class="card-img-top" alt="servicio-envios">
           <div class="card-body">
@@ -129,7 +129,30 @@
             <a href="#" class="btn btn-primary">Conocer más</a>
           </div>
         </div> 
-      </div>
+      </div> -->
+
+      <!-- Cards -->
+      
+      <div class="container">
+       
+        <div class="row d-flex justify-content-center" id="items"></div>
+      
+    
+
+      <template id="template-card">
+        <div class="card p-3 m-3" style="width: 36rem;">
+          <div class="card">
+            <img src="" alt="Imagen de servicio" class="card-img-top">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>precio</p>
+              <button class="btn btn-dark">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </template>
+    
+    </div>
     </main>
     
     <div id="button-up-up">
@@ -169,5 +192,6 @@
     
 <!-- JavaScript -->
 <script src="../javaScript/main.js"></script>
+
 </body>
 </html>
