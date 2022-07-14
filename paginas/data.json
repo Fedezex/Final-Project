@@ -1,38 +1,38 @@
 [
     {
-      "precio": 200,
+      "precio": 1199,
       "id": 1,
-      "title": "Envíos",
-      "thumbnailUrl": "../imagenes/envios.png"
+      "title": "100 Tarjetas Personales",
+      "thumbnailUrl": "../imagenes/PERSONALES.png"
     },
     {
-      "precio": 300,
+      "precio": 600,
       "id": 2,
-      "title": "Laminado",
-      "thumbnailUrl": "../imagenes/laminado.png"
+      "title": "Sellos",
+      "thumbnailUrl": "../imagenes/SELLOS.png"
     },
     {
-      "precio": 100,
+      "precio": 1499,
       "id": 3,
-      "title": "Espiralado",
-      "thumbnailUrl": "../imagenes/espirilado.png"
+      "title": "1000 Flyers 4/0",
+      "thumbnailUrl": "../imagenes/FLYERS.png"
     },
     {
-      "precio": 500,
+      "precio": 1999,
       "id": 4,
-      "title": "Barniz Sectorizado",
-      "thumbnailUrl": "../imagenes/barniz-sectorizado.png"
+      "title": "1000 Flyers Dipticos",
+      "thumbnailUrl": "../imagenes/dipticos.png"
     },
     {
-      "precio": 250,
+      "precio": 2499,
       "id": 5,
-      "title": "Sistema de troquelado",
-      "thumbnailUrl": "../imagenes/troquelado.png"
+      "title": "100 Carpetas laminadas",
+      "thumbnailUrl": "../imagenes/carpetas.png"
     },
     {
-      "precio": 1500,
+      "precio": 2399,
       "id": 6,
-      "title": "Pre Impresión - CTP",
-      "thumbnailUrl": "../imagenes/preimpresion.png"
+      "title": "Calendarios",
+      "thumbnailUrl": "../imagenes/calendarios.png"
     }
   ]
