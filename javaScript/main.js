@@ -144,7 +144,7 @@ const pintarCarrito = () => {
 
     pintarFooter()
 
-
+    //Guardado en localStorage
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
