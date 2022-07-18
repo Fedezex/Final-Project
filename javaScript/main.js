@@ -5,9 +5,27 @@ const btnSwitch = document.querySelector("#switch");
     btnSwitch.addEventListener('click', () =>{
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active');
+
+//Guardar Dark Mode en localStorage
+
+if(document.body.classList.contains('dark')){
+    localStorage.setItem('dark-mode', 'true');
+}else {
+    localStorage.setItem('dark-mode', 'false');
+}
 });
 
-// Scroll up
+// Obtener el modo actual
+
+if(localStorage.getItem('dark-mode') === 'true'){
+    document.body.classList.add('dark');
+    btnSwitch.classList.add('active');
+} else {
+    document.body.classList.remove('dark');
+    btnSwitch.classList.remove('active');
+}
+
+// Scroll up Button
 
 document.getElementById("button-up-up").addEventListener("click",scrollUp);
 
@@ -32,7 +50,7 @@ window.onscroll = function(){
 }
 
 
-// API Fetch
+// Data Base de trabajadores
 const API_URL = 'http://jsonplaceholder.typicode.com';
 
 const HTMLResponse = document.querySelector("#app");
@@ -52,7 +70,7 @@ fetch(`${API_URL}/users`)
     HTMLResponse.appendChild(ul);
 });
 
-// Carrito de contratación de servicios
+// Carrito de compra de productos
 
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
