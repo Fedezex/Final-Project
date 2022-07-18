@@ -96,17 +96,18 @@ items.addEventListener('click', e => {
     btnAccion(e)
 })
 
+// Leer JSON de productos
 const fetchData = async() => {
     try {
         const res = await fetch("data.json")
         const data = await res.json()
         pintarCards(data)
-//      console.log(data);  
     } catch (error) {
         console.log(error);
     }
 }
 
+// Recorrer elementos
 const pintarCards = data => {
          data.forEach(producto => {
          templateCard.querySelector('h5').textContent = producto.title
@@ -120,6 +121,7 @@ const pintarCards = data => {
          cards.appendChild(fragment)
 }
 
+// Evento boton comprar
 const addCarrito = e => {
     if (e.target.classList.contains('btn-dark')) {
         setCarrito(e.target.parentElement)
@@ -127,7 +129,7 @@ const addCarrito = e => {
     e.stopPropagation()
 }
 
-
+// Agregar al carrito
 const setCarrito = objeto => {
     const producto = {
         id: objeto.querySelector('.btn-dark').dataset.id,
@@ -136,9 +138,9 @@ const setCarrito = objeto => {
         cantidad: 1
     }
 
-    //Alerta de compra
+// Alerta de compra
     Swal.fire(
-        "Producto: "+producto.title,
+        producto.title,
         "Agregado al carrito de compras",
         );
 
@@ -151,7 +153,6 @@ const setCarrito = objeto => {
 }
 
 const pintarCarrito = () => {
-    //console.log(carrito);
     items.innerHTML = ''
     Object.values(carrito).forEach(producto => {
         templateCarrito.querySelector('th').textContent = producto.id
@@ -167,7 +168,7 @@ const pintarCarrito = () => {
 
     pintarFooter()
 
-    //Guardado en localStorage
+// Guardado en localStorage
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
@@ -180,6 +181,7 @@ const pintarFooter = () => {
         return
     }
 
+// Sumar y restar cantidades de productos
     const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad, 0)
     const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio,0)
 
@@ -190,6 +192,7 @@ const pintarFooter = () => {
     fragment.appendChild(clone)
     footer.appendChild(fragment)
 
+// Vaciar Carrito
     const btnVaciar = document.getElementById('vaciar-carrito')
     btnVaciar.addEventListener('click', () => {
         carrito = {}
