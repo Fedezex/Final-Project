@@ -121,22 +121,27 @@ const pintarCards = data => {
 }
 
 const addCarrito = e => {
-    //console.log(e.target);
-    //console.log(e.target.classList.contains('btn-dark'));
     if (e.target.classList.contains('btn-dark')) {
         setCarrito(e.target.parentElement)
     }
     e.stopPropagation()
 }
 
+
 const setCarrito = objeto => {
-    //console.log(objeto);
     const producto = {
         id: objeto.querySelector('.btn-dark').dataset.id,
         title: objeto.querySelector('h5').textContent,
         precio: objeto.querySelector('p').textContent,
         cantidad: 1
     }
+
+    //Alerta de compra
+    Swal.fire(
+        "Producto: "+producto.title,
+        "Agregado al carrito de compras",
+        );
+
     if(carrito.hasOwnProperty(producto.id)){
         producto.cantidad = carrito[producto.id].cantidad + 1
     }
@@ -170,7 +175,7 @@ const pintarFooter = () => {
     footer.innerHTML = ''
     if(Object.keys(carrito).length === 0 ) {
         footer.innerHTML = `
-        <th scope= "row" colspan="5">Carrito vacio - comience a comprar!</th>`
+        <th scope= "row" colspan="5">El Carrito de compras está vacío</th>`
 
         return
     }
